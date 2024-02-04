@@ -12,7 +12,7 @@ import memory.mingle.video.Video;
  * 
  */
 public class Feed {
-	ArrayList<Video> feedArray;
+	ArrayList<Video> feedArray; 
 	
 
 	/**
@@ -26,9 +26,9 @@ public class Feed {
 		feedArray.add(0, video);
 	}
 	
-	public void removeVideo(Path path) {
+	public void removeVideo(String fileName) {
 		for(int i = 0; i < feedArray.size(); i++) {
-			if(feedArray.get(i).getPath().equals(path)) {
+			if(feedArray.get(i).getFileName().equals(fileName)) {
 				feedArray.remove(i);
 			}
 		}
@@ -40,3 +40,4 @@ public class Feed {
 	}
 
 }
+
