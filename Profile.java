@@ -21,7 +21,7 @@ public class Profile {
 	String email; 
 	
 	String password;
-	
+	 
 	Feed profileFeed;
 	
 	String phoneNumber;
@@ -32,9 +32,9 @@ public class Profile {
 	
 	LocalDate dateToday;
 	
-	ArrayList<Profile> requests;
+	public ArrayList<Profile> requests;
 	
-	ArrayList<Profile> profiles;
+	public ArrayList<Profile> profiles;
 	
 
 	/**
@@ -46,7 +46,9 @@ public class Profile {
 		setEmail(email);
 		setPassword(password);
 		setDementia(hasDementia);
-		this.hasPosted = postedToday();
+		this.requests = new ArrayList<Profile>();
+		this.profiles = new ArrayList<Profile>();
+		//this.hasPosted = postedToday();
 	}
 
 	/**
@@ -143,5 +145,10 @@ public class Profile {
 		return new Video(fileName);
 	}
 	
+	public ArrayList<Profile> getRequests(){
+		return requests;
+	}
+	
 
 }
+
