@@ -16,7 +16,7 @@ import java.time.LocalDate;
 public class Video {
 	
 	String caption;
-	
+	 
 	boolean reply;
 	
 	Path path;
@@ -85,6 +85,10 @@ public class Video {
 	public void setDate() {
 		date = java.time.LocalDate.now();
 	}
+	
+	public String getFileName() {
+		return this.getFileName();
+	}
 
 	
 	
@@ -92,3 +96,4 @@ public class Video {
 	
 
 }
+
